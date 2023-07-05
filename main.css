@@ -1,0 +1,226 @@
+:root{
+    --primary-font: 'Roboto', sans-serif;
+    --secondary-font: 'Raleway', sans-serif;
+    --accent-color: #2196F3;
+    --main-color: #212121;;
+}
+
+.list {
+    list-style: none;
+}
+  
+.link {
+    text-decoration: none;
+}
+
+body {
+    font-family: var(--primary-font);
+    color: var(--main-color);
+}
+
+/* start header */
+.logo-first-part{
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+}
+
+.logo-second-part{
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color:#000000; ;
+}
+
+.nav-list-link{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: inherit;
+}
+
+.nav-list-link:hover,
+.nav-list-link:focus{
+    color: var(--accent-color);
+}
+
+.contact-list-item{
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: #757575;
+}
+
+.contact-list-item.link:hover,
+.contact-list-item.link:focus{
+    color: var(--accent-color);
+}
+
+.site-nav .link.current{
+    color: var(--accent-color);
+}
+
+/* end header */
+
+/* start hero */
+
+.hero{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase; 
+    background-color:#2F303A ;
+}
+
+.hero-title{
+    color: #FFFFFF;
+}
+
+.hero-btn{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: var(--accent-color);
+}
+
+/* end hero */
+
+/* start about */
+.text-about{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.description-about{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;  
+    color: #757575;
+}
+
+.title-gallery{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.gallery-item-img{
+    width: 370px;
+    height: 294px;
+}
+/* end about */
+
+/* start masters */
+.title-masters{
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 42px;
+text-align: center;
+letter-spacing: 0.03em;
+}
+
+.masters-item-title{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;  
+}
+
+.descriptiom-masters-item{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #757575;    
+}
+
+.masters-item-img{
+    width: 270px;
+    height: 260px;
+}
+
+/* end masters */
+
+/* start footer */
+.footer{
+    background-color:#2F303A ;
+}
+
+.contact-footer-item{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+
+.contact-footer-list{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* end footer */
+
+/* start potfolio */
+.filter-btn-item{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    background: #F5F4FA;
+}
+
+.filter-btn-item:hover,
+.filter-btn-item:focus{
+    background-color: var(--accent-color);
+    color: #FFFFFF;
+}
+
+.potfolio-img-list{
+    width: 370px;
+    height: 294px;
+}
+
+.portfolio-title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--main-color);
+}
+
+.description-portfolio{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+/* end prtfolio */
