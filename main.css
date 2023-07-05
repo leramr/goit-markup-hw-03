@@ -18,7 +18,56 @@ body {
     color: var(--main-color);
 }
 
+h1,h2,h3,p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul,ol{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+img{
+    display: block;
+}
+
+::after, ::before{
+    box-sizing: border-box;
+}
+
+.section{
+margin-top: 94px;
+}
+
 /* start header */
+
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.site-nav{
+    display: flex;
+}
+
+.container{
+    width: 1600px;
+}
+
+.nav-list{
+ display: flex;
+ align-items: center;
+}
+    
+.logo{
+    margin-right: 94px;
+    margin-top: 24px;
+    
+    }
+
 .logo-first-part{
     font-family: var(--secondary-font);
     font-weight: 700;
@@ -34,7 +83,11 @@ body {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color:#000000; ;
+    color:#000000; 
+}
+
+.nav-list-item:not(:last-child){
+    margin-right: 50px;
 }
 
 .nav-list-link{
@@ -51,6 +104,8 @@ body {
 }
 
 .contact-list-item{
+margin-left: auto;
+
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
@@ -223,4 +278,4 @@ letter-spacing: 0.03em;
     color: #757575;
 }
 
-/* end prtfolio */
+/* end portfolio */

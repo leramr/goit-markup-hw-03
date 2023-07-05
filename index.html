@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title lang="en">WebStudio</title>
 
 </head>
@@ -15,24 +16,24 @@
    
     <!--start header -->
     <header class="header">
-        <nav class="site-nav">
-            <a class="logo-second-part link" href=""><span class="logo-first-part">Web</span>Studio</a>
-        <ul class="nav-list list">
-            <li class="nav-list-item">
-                <a class="nav-list-link link current" href="">Студія</a>
-            </li>
-            <li class="nav-list-item">
-                <a class="nav-list-link link" href="./portfolio.html">Портфорліо</a>
-            </li>
-            <li class="nav-list-item">
-                <a class="nav-list-link link" href="">Контакти</a>
-            </li>
-        </ul>
-         </nav>
-        <ul class="contact list">
-        <li><a class="contact-list-item link" href="malito:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a class="contact-list-item link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-        </ul>
+        <div class="container header-container">
+            <nav class="site-nav">
+                <a class=" logo link" href=""><span lang="uk" class="logo-first-part">Web</span><span lang="uk" class="logo-second-part">Studio</span></a>
+            <ul class="nav-list list ">
+                <li class="nav-list-item">
+                    <a class="nav-list-link link current" href="">Студія</a>
+                </li>
+                <li class="nav-list-item">
+                    <a class="nav-list-link link" href="./portfolio.html">Портфорліо</a>
+                </li>
+                <li class="nav-list-item">
+                    <a class="nav-list-link link" href="">Контакти</a>
+                </li>
+            </ul>
+             </nav>
+            <a class="contact-list-item link" href="malito:info@devstudio.com">info@devstudio.com</a>
+            <a class="contact-list-item link" href="tel:+380961111111">+38 096 111 11 11</a>
+        </div>
     </header>
     <!--end header -->
 
@@ -46,7 +47,7 @@
         </section>
 
         <section class="section-about">
-            <ul class="text-about list">
+            <ul class="text-about section list">
                 <li class="text-about-item">
                     <h2 class="title-about ">УВАГА ДО ДЕТАЛЕЙ</h2>
                     <p class="description-about">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
@@ -64,7 +65,7 @@
                     <p class="description-about">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
                 </li>
             </ul>
-            <h2 class="title-gallery">Чим ми займаємося</h2>
+            <h2 class="title-gallery section">Чим ми займаємося</h2>
             <ul class="gallery-list list">
                 <li class="gallery-item"><img class="gallery-item-img" src="./img/work-2.jpg" alt="робота">
                 </li>
@@ -75,7 +76,7 @@
             </ul>
         </section>
 
-            <section class="masters">
+            <section class="masters section">
                 <h2 class="title-masters">Наша команда</h2>
                 <ul class="masters-list list">
                     <li class="masters-item">
