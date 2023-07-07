@@ -2,7 +2,8 @@
     --primary-font: 'Roboto', sans-serif;
     --secondary-font: 'Raleway', sans-serif;
     --accent-color: #2196F3;
-    --main-color: #212121;;
+    --main-color: #212121;
+    --secondary-accent-color: #757575; 
 }
 
 .list {
@@ -72,7 +73,7 @@ margin-top: 94px;
 .logo{
     margin-right: 94px;
     margin-top: 24px;
-  
+    align-items: center;
     }
 
 .logo-first-part{
@@ -116,7 +117,7 @@ font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
-color: #757575;
+color: var(--secondary-accent-color);
 }
 
 .contact-email{
@@ -143,12 +144,15 @@ color: #757575;
     line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
-    text-transform: uppercase; 
+    
     background-color:#2F303A ;
 }
 
 .hero-title{
     color: #FFFFFF;
+    font-weight: 900;
+    font-size: 44px;
+    text-transform: uppercase; 
 }
 
 .hero-btn{
@@ -158,22 +162,37 @@ color: #757575;
     text-align: center;
     color: #FFFFFF;
     background-color: var(--accent-color);
+    letter-spacing: 0.96px;
+
+    min-width: 216px;
+    padding: 10px 32px;
+    border-radius: 4px;
 }
 
 /* end hero */
 
 /* start about */
-.text-about{
+.section-about *{
+    outline: 1px solid teal;
+}
+
+.text-about {
     display: flex;
+    justify-content: space-between;
+}
+
+.text-about{
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
-    text-transform: uppercase;
 }
 
 .title-about{
+    font-weight: 700;
+    font-size: 14px; 
+    text-transform: uppercase;
     margin-bottom: 10px;
 }
 
@@ -182,7 +201,7 @@ color: #757575;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;  
-    color: #757575;
+    color: var(--secondary-accent-color);
 }
 
 .title-gallery{
@@ -198,7 +217,6 @@ color: #757575;
 display: flex;
 justify-content: space-between;
 
-outline: 1px solid teal;
 }
 
 .gallery-item-img{
@@ -208,8 +226,8 @@ outline: 1px solid teal;
 /* end about */
 
 /* start masters */
-.masters.section.container *{
-    outline: 1px solid tomato; 
+.masters.section *{
+    outline: 1px solid teal;
 }
 
 .masters-list{
@@ -217,14 +235,13 @@ outline: 1px solid teal;
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
-    margin-right: -30px;
+    padding-bottom: 94px;
 }
 
-.masters-item{
+.masters-item {
     margin-right: 30px;
-    flex-basis: calc(100% / 4 - 30px);
+    flex-basis: calc((100% - 4 * 30px)/4);
 }
-
 
 .title-masters{
 font-style: normal;
@@ -242,7 +259,9 @@ padding-top: 94px;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
-    letter-spacing: 0.03em;  
+    letter-spacing: 0.03em; 
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .descriptiom-masters-item{
@@ -251,7 +270,7 @@ padding-top: 94px;
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #757575;    
+    color: var(--secondary-accent-color);    
 }
 
 .masters-item-img{
@@ -266,6 +285,9 @@ padding-top: 94px;
     background-color:#2F303A ;
 }
 
+.footer .logo-second-part{
+    color: #FFFFFF;
+}
 
 .contact-footer-item{
     font-weight: 400;
@@ -275,17 +297,17 @@ padding-top: 94px;
     color: #FFFFFF;
 }
 
-.contact-footer-list{
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-}
 
 /* end footer */
 
 /* start potfolio */
+
+.filter.list{
+    display: flex;
+    justify-content: center; 
+   
+}
+
 .filter-btn-item{
     font-weight: 500;
     font-size: 16px;
@@ -293,13 +315,42 @@ padding-top: 94px;
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
-    background: #F5F4FA;
+    background: #F5F4FA; 
+    letter-spacing: 0.48px;
+    border-radius: 4px;
+    border: 0;
+
+    padding: 6px 22px;
+    margin-bottom: 50px;
 }
 
 .filter-btn-item:hover,
 .filter-btn-item:focus{
     background-color: var(--accent-color);
     color: #FFFFFF;
+}
+
+.portfolio-gallery *{
+    outline: 1px solid teal;
+}
+
+.portfolio-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+    margin-bottom: -30px;
+    padding-bottom: 94px;
+}
+
+.portfolio-gallery-content{
+    padding: 20px 24px;
+}
+
+.portfolio-gallery-item{
+    flex-basis: calc(100% / 3 - 30px);
+    margin-right: 30px;
+    margin-bottom: 30px;
+
 }
 
 .potfolio-img-list{
@@ -320,7 +371,7 @@ padding-top: 94px;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--secondary-accent-color);
 }
 
 /* end portfolio */
