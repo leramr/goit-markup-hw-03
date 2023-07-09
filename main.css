@@ -62,19 +62,19 @@ margin-top: 94px;
 
 .site-nav{
     display: flex;
-    align-items: center;
+    align-items:  center;
 }
 
 .nav-list{
  display: flex;
- align-items: center;
+
 }
-    
-.logo{
+
+ .logo{
+    align-items: center;
     margin-right: 94px;
     margin-top: 24px;
-    align-items: center;
-    }
+ }
 
 .logo-first-part{
     font-family: var(--secondary-font);
@@ -172,9 +172,6 @@ color: var(--secondary-accent-color);
 /* end hero */
 
 /* start about */
-.section-about *{
-    outline: 1px solid teal;
-}
 
 .text-about {
     display: flex;
@@ -216,7 +213,6 @@ color: var(--secondary-accent-color);
 .gallery-list{
 display: flex;
 justify-content: space-between;
-
 }
 
 .gallery-item-img{
@@ -226,9 +222,6 @@ justify-content: space-between;
 /* end about */
 
 /* start masters */
-.masters.section *{
-    outline: 1px solid teal;
-}
 
 .masters-list{
     display: flex;
@@ -238,9 +231,8 @@ justify-content: space-between;
     padding-bottom: 94px;
 }
 
-.masters-item {
+.masters-item:not(:last-child) {
     margin-right: 30px;
-    flex-basis: calc((100% - 4 * 30px)/4);
 }
 
 .title-masters{
@@ -285,18 +277,40 @@ padding-top: 94px;
     background-color:#2F303A ;
 }
 
+.footer-content-list{
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo-footer{
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
 .footer .logo-second-part{
     color: #FFFFFF;
 }
 
-.contact-footer-item{
+.contact-footer-map{
     font-weight: 400;
+    font-style: normal;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #FFFFFF;
 }
 
+.contact-footer-email,
+.contact-footer-phone{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
 
 /* end footer */
 
@@ -314,7 +328,7 @@ padding-top: 94px;
     line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: #FFFFFF;
     background: #F5F4FA; 
     letter-spacing: 0.48px;
     border-radius: 4px;
@@ -327,11 +341,10 @@ padding-top: 94px;
 .filter-btn-item:hover,
 .filter-btn-item:focus{
     background-color: var(--accent-color);
-    color: #FFFFFF;
 }
 
-.portfolio-gallery *{
-    outline: 1px solid teal;
+.filter-btn .current{
+    background-color: var(--accent-color);
 }
 
 .portfolio-gallery{
