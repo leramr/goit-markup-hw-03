@@ -74,6 +74,7 @@ margin-top: 94px;
     align-items: center;
     margin-right: 94px;
     margin-top: 24px;
+    margin-bottom: 15px;
  }
 
 .logo-first-part{
@@ -322,13 +323,17 @@ padding-top: 94px;
    
 }
 
+.filter-btn:not(:last-child){
+    margin-right: 8px;
+}
+
 .filter-btn-item{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #FFFFFF;
+    color: #212121;
     background: #F5F4FA; 
     letter-spacing: 0.48px;
     border-radius: 4px;
@@ -341,10 +346,12 @@ padding-top: 94px;
 .filter-btn-item:hover,
 .filter-btn-item:focus{
     background-color: var(--accent-color);
+    color: #FFFFFF;
 }
 
 .filter-btn .current{
     background-color: var(--accent-color);
+    color: #FFFFFF;
 }
 
 .portfolio-gallery{
