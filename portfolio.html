@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="./main.css">
     <title lang="en">portfolio</title>
 </head>
@@ -39,8 +40,10 @@
 
             <!-- start main -->
         <main>
-            <section class="portfolio-section container">
+            <section class="portfolio-section ">
                 <!-- <h1>portfolio</h1> -->
+
+                <div class="portfolio container">
                 <ul class="filter list">
                     <li class="filter-btn">
                         <button class="filter-btn-item current" type="button">Усі</button>
@@ -60,7 +63,6 @@
                 </ul>
 
                 <ul class="portfolio-gallery list">
-                    
                     <li class="portfolio-gallery-item ">
                         <a class="portfolio-gallery-list link" href="">
                             <img class="potfolio-img-list" src="./img/laptop-people.jpg" alt="">
@@ -152,23 +154,22 @@
                     </li>
 
                 </ul>
+                </div>
+               
             </section>
         </main>
             <!-- end main -->
 
     <!-- start footer -->
     <footer class="footer">
-        <div class="logo-footer">
-            <a class="logo-second-part link" href=""><span class="logo-first-part">Web</span>Studio</a>
-        </div>
+        <div class="logo-footer container">
+            <a class="logo-footer-item link" href=""><span lang="uk" class="logo-first-part">Web</span><span lang="uk" class="logo-second-part">Studio</span></a>
         <address class="footer-content">
-            <div class="footer-content-list">
                 <ul class="contact-footer list">
                     <li class="contact-footer-list"><a class="contact-footer-map link" href="https://goo.gl/maps/wiUP9WVVmMb9opPz9?coh=178572&entry=tt" target="_blank">м. Київ, пр-т Лесі Українки, 26</a></li>
                     <li class="contact-footer-list "><a class="contact-footer-email link" href="malito:info@devstudio.com">info@devstudio.com</a></li>
                     <li class="contact-footer-list"><a class="contact-footer-phone link" href="tel:+380961111111">+38 096 111 11 11</a></li>
                 </ul>
-            </div>
             
         </address>
     </footer>
